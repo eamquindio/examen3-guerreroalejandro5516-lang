@@ -81,11 +81,12 @@ public class Vehiculo {
      * @return La tarifa por hora
      */
     public double obtenerTarifaHora() {
-       double tarifaVehic=0.0;
+    
+        double tarifaVehic=0.0;
         switch ("Vehiculo") {
             case "SEDAN":
                 if (getTipo().equals("SEDAN")) {
-                  tarifaVehic=1.500;
+                  tarifaVehic=    1.500;   
                     
                 }
 

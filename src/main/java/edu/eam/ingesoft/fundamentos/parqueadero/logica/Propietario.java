@@ -23,7 +23,7 @@ public class Propietario {
      */
     public Propietario(String cedula, String nombre) {
         this.cedula=cedula;
-        this.nombre=nombre;
+        this.nombre=nombre;  
         // TODO: Implementar constructor
     }
 
@@ -59,7 +59,7 @@ public class Propietario {
     public void acumularHoras(int horas) {
         
         this.horasAcumuladas=horas;
-        
+
 
         
 
