@@ -22,6 +22,8 @@ public class Propietario {
      * @param nombre Nombre completo del propietario
      */
     public Propietario(String cedula, String nombre) {
+        this.cedula=cedula;
+        this.nombre=nombre;
         // TODO: Implementar constructor
     }
 
@@ -55,6 +57,13 @@ public class Propietario {
      * @param horas Cantidad de horas a sumar
      */
     public void acumularHoras(int horas) {
+        
+        this.horasAcumuladas=horas;
+        
+
+        
+
+        
         // TODO: Implementar método
     }
 

@@ -25,6 +25,12 @@ public class Vehiculo {
      * @param tipo Tipo de vehículo ("SEDAN", "SUV" o "CAMION")
      */
     public Vehiculo(String placa, int modelo, String color, Propietario propietario, String tipo) {
+        this.placa=placa;
+        this.modelo=modelo;
+        this.color=color;
+        this.propietario=propietario;
+        this.tipo=tipo;
+        
         // TODO: Implementar constructor
     }
 
@@ -75,7 +81,36 @@ public class Vehiculo {
      * @return La tarifa por hora
      */
     public double obtenerTarifaHora() {
+       double tarifaVehic=0.0;
+        switch ("Vehiculo") {
+            case "SEDAN":
+                if (getTipo().equals("SEDAN")) {
+                  tarifaVehic=1.500;
+                    
+                }
+
+                break;
+                case "SUV":
+                    if (getTipo().equals("SUV")) {
+                  tarifaVehic=2.500;
+                    
+                    }
+                    
+                break;
+                case "CAMION":
+                if (getTipo().equals("CAMION")) {
+                  tarifaVehic=3.000;
+                    
+                }   
+                break;
+
+        
+            default:
+                tarifaVehic=0.0;
+                
+                break;
+        }
         // TODO: Implementar método usando switch
-        return 0;
+        return tarifaVehic;
     }
 }
